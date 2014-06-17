@@ -3,8 +3,8 @@ local_lib     := $(addprefix $(DIR_OBJ)/,$(local_dir)/libmongoose.a)
 local_program := 
 local_inc     := mongoose
 local_src     := $(addprefix $(DIR_SRC)/$(local_dir)/,mongoose.c)
-local_objs  := $(addprefix $(DIR_OBJ)/,$(subst .c,.o,$(local_src)))
-local_dep   := 
+local_objs    := $(addprefix $(DIR_OBJ)/,$(subst .c,.o,$(local_src)))
+local_dep     := 
 
 libraries   += $(local_lib)
 sources     += $(local_src)
