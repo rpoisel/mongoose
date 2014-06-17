@@ -1,5 +1,5 @@
 local_dir     := mongoose
-local_lib     := $(local_dir)/libmongoose.a
+local_lib     := $(addprefix $(DIR_OBJ)/,$(local_dir)/libmongoose.a)
 local_program := 
 local_inc     := mongoose
 local_src     := $(addprefix $(DIR_SRC)/$(local_dir)/,mongoose.c)
