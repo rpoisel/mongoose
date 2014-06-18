@@ -5,6 +5,7 @@ local_inc     := mongoose
 local_src     := $(addprefix $(DIR_SRC)/$(local_dir)/,mongoose.c)
 local_objs    := $(addprefix $(DIR_OBJ)/,$(subst .c,.o,$(local_src)))
 local_dep     := 
+local_lib_dep :=
 
 libraries   += $(local_lib)
 sources     += $(local_src)
